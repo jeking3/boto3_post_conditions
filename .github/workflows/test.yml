@@ -38,6 +38,7 @@ jobs:
       - run: make setup
 
       - run: make lint
+        if: "startsWith('3.9.', matrix.python-version)"
 
       - run: make coverage
 

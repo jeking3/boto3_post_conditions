@@ -1,39 +1,36 @@
 # boto3-post-conditions
 
+ ![ci](https://github.com/jeking3/boto3_post_conditions/actions/workflows/test.yml/badge.svg)
+[![codecov](https://codecov.io/gh/jeking3/boto3_post_conditions/branch/main/graph/badge.svg?token=NP7WihxzHD)](https://codecov.io/gh/jeking3/boto3_post_conditions)
+[![open issues](https://img.shields.io/github/issues-raw/jeking3/boto3_post_conditions)](https://github.com/jeking3/boto3_post_conditions/issues)
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Most AWS APIs are eventually consistent with few guarantees.  For example when
+you use SSM `put_parameter` (which succeeds), then immediately call `get_parameter`,
+you might get an error such as `ParameterNotFound`.  Welcome to the world of
+eventual consistency.  Anyone who has worked with the AWS CLI or API has been
+forced to do one of two things:
+
+1. Add sleep logic to wait for things to align, or
+2. Add retry logic to wait for things to align.
+
 This library injects logic for post-condition blocking checks in boto3
 to eliminate the majority of retry code that everyone has been forced to
 add (and develop tests for) in their own code.  This is especially useful
 in serial scripts that manipulate AWS, where different commands in the script
 depend on changes from the previous command to be fully realized.  Hopefully
 this sort of logic can make its way into botocore in the future so that
-serialized scripts can take advantage of it and become vastle simplified.
-
-boto3-post-conditions hooks into [botocore](https://github.com/boto/botocore)
-in a manner similar to the simulation library [moto](https://github.com/spulec/moto)
-such that when a call completes that modifies something, the client verifies
-that the change has been realized.  This does require a little bit of stack
-inspection, as the client and original call parameters are not passed through
-the handle_event mechanism.
-
-## Background
-
-Every developer who has worked with the AWS API has encountered eventual
-consistency issues.  This behavior has led virtually every reliable product
-that leverages the AWS API to add their own code to defeat the effects of
-eventual consistency.  The best way to deal with eventual consistency in a
-pipeline is to add post-condition checks.  For example, if you delete a secret
-in AWS Secrets Manager, it is not immediately deleted.  It is scheduled for
-deletion and then it is eventually deleted.  If you attempt to insert a new
-secret with the same name during this transition you get an error.
-
-Tag management falls into the same category, as some AWS subsystems rely on
-the Resource and Tag Manager to handle tagging, and that means more eventual
-consistency.  If you modify or remove a tag on a resource, it is often not
-realized immediately (causing a situation where you cannot read what you
-wrote), so follow-up code that depends on that tag being modified or deleted
-can fail.
+serialized scripts can take advantage of it and become vastly simplified.
 
 ## Quick Start
+
+### Compatibility
+
+boto3-post-conditions supports at least some of the following AWS subsystems:
+
+- SSM Parameter Store
+- Secrets Manager
 
 ### Installing
 
@@ -68,6 +65,36 @@ It's pre-alpha, so there are going to be some major gaps...
   being able to wrap boto calls in a context manager and then finalize
   their changes all at once (allowing AWS to process all the requests
   in parallel) is going to be useful.
+
+## Background
+
+Every developer who has worked with the AWS API has encountered eventual
+consistency issues.  This behavior has led virtually every reliable product
+that leverages the AWS API to add their own code to defeat the effects of
+eventual consistency.  The best way to deal with eventual consistency in a
+pipeline is to add post-condition checks.  For example, if you delete a secret
+in AWS Secrets Manager, it is not immediately deleted.  It is scheduled for
+deletion and then it is eventually deleted.  If you attempt to insert a new
+secret with the same name during this transition you get an error.  You may
+even still be able to read the secret even though the delete call returned
+success.
+
+AWS documents [eventual consistency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/query-api-troubleshooting.html#eventual-consistency)
+separately for each of their subsystems.
+
+Tag management falls into the same category, as some AWS subsystems rely on
+the Resource and Tag Manager to handle tagging, and that means more eventual
+consistency.  If you modify or remove a tag on a resource, it is often not
+realized immediately (causing a situation where you cannot read what you
+wrote), so follow-up code that depends on that tag being modified or deleted
+can fail.
+
+boto3-post-conditions hooks into [botocore](https://github.com/boto/botocore)
+in a manner similar to the simulation library [moto](https://github.com/spulec/moto)
+such that when a call completes that modifies something, the client verifies
+that the change has been realized.  This does require a little bit of stack
+inspection, as the client and original call parameters are not passed through
+the handle_event mechanism.
 
 ## Theory of Operation
 
