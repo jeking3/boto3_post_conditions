@@ -34,22 +34,22 @@ boto3-post-conditions supports at least some of the following AWS subsystems:
 
 ### Installing
 
-> pip install boto3-post-conditions
+    pip install boto3-post-conditions
 
 or
 
-> poetry add boto3-post-conditions
+    poetry add boto3-post-conditions
 
 ### Using
 
 Create a boto3 client like you normally would.  To enforce post-conditions
 on calls to that client, register the client with the `PostConditionEnforcer`:
 
-> import boto3
-> from boto3_post_conditions import PostConditionEnforcer
->
-> client = boto3.client("ssm")
-> PostConditionEnforcer.register(client)
+    import boto3
+    from boto3_post_conditions import PostConditionEnforcer
+
+    client = boto3.client("ssm")
+    PostConditionEnforcer.register(client)
 
 The enforcer will inject event handlers into the client definition to
 block returning from your API calls until changes are actually realized
