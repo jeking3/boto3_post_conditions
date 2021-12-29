@@ -22,6 +22,7 @@ jobs:
         python-version:
           - "3.8"
           - "3.9"
+          - "3.10"
 
     steps:
       - uses: actions/checkout@v2
@@ -41,4 +42,4 @@ jobs:
       - run: make coverage
 
       - uses: codecov/codecov-action@v2
-        if: "startsWith(matrix.python-version, '3.9.')"
+        if: "startsWith('3.9.', matrix.python-version)"
