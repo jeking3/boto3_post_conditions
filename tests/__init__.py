@@ -35,7 +35,7 @@ class PostConditionTestCase(TestCase):
             # playback: provide (slightly) silly values so it is easy to run tests
             os.environ["AWS_ACCOUNT_ID"] = "123456789012"
             os.environ["AWS_ACCESS_KEY_ID"] = "foo"
-            os.environ["AWS_DEFAULT_REGION"] = "us-west-2"
+            os.environ["AWS_DEFAULT_REGION"] = "us-east-1"
             os.environ["AWS_SECRET_ACCESS_KEY"] = "bar"  # nosec
             self.sleep_patch = patch("retry.api.time.sleep", autospec=True)
             self.sleep_mock = self.sleep_patch.start()
