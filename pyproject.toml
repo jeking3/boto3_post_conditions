@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "boto3-post-conditions"
-version = "0.1.0"
+version = "0.2.0"
 description = "Remove retry logic from boto3 clients by enforcing post-conditions."
 readme = "README.md"
 repository = "https://github.com/jeking3/boto3-post-conditions/"
@@ -8,7 +8,7 @@ keywords = ["boto3", "aws", "eventual consistency", "retry"]
 authors = ["James E. King III <jking@apache.org>"]
 license = "Apache-2.0"
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
