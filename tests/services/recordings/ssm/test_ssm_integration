@@ -1,0 +1,979 @@
+interactions:
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "Type": "String", "Value": "value1",
+      "Tags": [{"Key": "foo", "Value": "bar"}]}'
+    headers:
+      Content-Length:
+      - '116'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI3Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLlB1dFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Tier":"Standard","Version":1}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:26 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 5bb293cf-18c6-426d-80c4-d4d000e5f44c
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799506768E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value1","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:26 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 6c07aaad-ec03-4d09-add0-40fa2848ca8c
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"ResourceId": "b3pc_test_ssm_integration", "ResourceType": "Parameter"}'
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkxpc3RUYWdzRm9yUmVzb3VyY2U=
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"TagList":[{"Key":"foo","Value":"bar"}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '41'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:26 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 1bdb1945-ebb2-41a4-b066-2db3f03dc5f1
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"ResourceType": "Parameter", "ResourceId": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkxpc3RUYWdzRm9yUmVzb3VyY2U=
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"TagList":[{"Key":"foo","Value":"bar"}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '41'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 8c497259-5199-43f4-8457-2309c90370ab
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "WithDecryption": false}'
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799506768E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value1","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - d40e1c4c-f318-43e9-894c-bd871e599738
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "Type": "String", "Value": "value2",
+      "Overwrite": true}'
+    headers:
+      Content-Length:
+      - '93'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLlB1dFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Tier":"Standard","Version":2}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 9a280bc7-18e7-4add-b92b-22baeb6bc082
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799507175E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value2","Version":2}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 721ccbd2-5d34-478e-b4b9-91bfc607034f
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "WithDecryption": false}'
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799507175E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value2","Version":2}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 55bdc090-61ed-40d6-9c5e-ece96f614ee8
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkRlbGV0ZVBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - d35db297-7b66-41ee-984f-95dc10c03650
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ParameterNotFound"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 23d67902-0917-4f0d-b03c-732e443f4219
+    status:
+      code: 400
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "Type": "String", "Value": "value3"}'
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLlB1dFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Tier":"Standard","Version":1}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 593493da-936b-46a3-8f04-92a6eea4ad96
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI4Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.64079950767E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value3","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '227'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 26d6474b-1443-4600-b0e2-5b9304150dc6
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "WithDecryption": false}'
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.64079950767E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value3","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '227'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:27 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - a50920a5-382b-4753-b559-d7cfeecf7a31
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkRlbGV0ZVBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - f4685206-1969-46a5-8dcf-42e99ae8ede0
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ParameterNotFound"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 6810c86d-881b-40aa-94b1-db8efb6ef9df
+    status:
+      code: 400
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "Type": "String", "Value": "value4"}'
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLlB1dFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Tier":"Standard","Version":1}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - bb2e13f0-362c-4267-b755-7e9f329e3fe3
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799508143E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value4","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - e6ce8682-a999-46fd-969f-34cfe37285f6
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "WithDecryption": false}'
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.640799508143E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value4","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 1f8c261a-0878-4941-8bb6-b33c5c9c6699
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkRlbGV0ZVBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - ffd5eca7-15b9-4a27-9b71-08c232808dbd
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ParameterNotFound"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - d336933a-eb4a-41fe-9e24-4dfd8b72f99f
+    status:
+      code: 400
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "Type": "String", "Value": "value5"}'
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLlB1dFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Tier":"Standard","Version":1}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 8a9e4274-836b-46a2-b9a1-b230a69aa466
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.64079950856E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value5","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '227'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 4dad6378-0515-447d-a3ec-79aee5906fee
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration", "WithDecryption": false}'
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:375293018267:parameter/b3pc_test_ssm_integration","DataType":"text","LastModifiedDate":1.64079950856E9,"Name":"b3pc_test_ssm_integration","Type":"String","Value":"value5","Version":1}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '227'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 468c8153-488f-4d68-867f-f1180931d6fe
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODI5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkRlbGV0ZVBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - b272e6b6-e75a-4dea-b5e1-21efe79cae09
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"Name": "b3pc_test_ssm_integration"}'
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yMC4yNiBQeXRob24vMy45LjYgTGludXgvNS4xMC42MC4xLW1pY3Jvc29mdC1zdGFu
+        ZGFyZC1XU0wyIEJvdG9jb3JlLzEuMjMuMjY=
+      X-Amz-Date:
+      - !!binary |
+        MjAyMTEyMjlUMTczODMwWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1NNLkdldFBhcmFtZXRlcg==
+    method: POST
+    uri: https://ssm.us-east-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ParameterNotFound"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 29 Dec 2021 17:38:28 GMT
+      Server:
+      - Server
+      x-amzn-RequestId:
+      - 906e4aaf-51c3-4389-913a-31405b12aa21
+    status:
+      code: 400
+      message: ''
+version: 1

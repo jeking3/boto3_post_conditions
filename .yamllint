@@ -1,0 +1,11 @@
+---
+extends: default
+
+rules:
+  comments-indentation: disable
+  braces: disable
+  line-length:
+    max: 200
+  truthy:
+    level: error
+    allowed-values: ['true', 'false', 'on']

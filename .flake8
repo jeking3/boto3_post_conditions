@@ -1,0 +1,11 @@
+# we have to ignore E203,W503 because black inserts a space, flake8 says it is bad
+# we ignore E402 due to some trickery in the sphinx conf.py file with PYTHONPATH
+# SFS301 is ignored if flake8-sfs is installed, allowing python3 f-strings
+[flake8]
+ignore = SFS301
+exclude =
+    .git,
+    __pycache__,
+    dist/
+max-complexity = 10
+max-line-length = 119
