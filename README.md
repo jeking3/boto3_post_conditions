@@ -57,7 +57,7 @@ in the AWS service you are modifying.
 
 ## Limitations
 
-It's pre-alpha, so there are going to be some major gaps...
+It's beta, so there are going to be some major gaps...
 
 - Only supports some of Secrets Manager and SSM initially.
 - Post-conditions are always checked serially after each modification.
