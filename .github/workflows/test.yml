@@ -1,7 +1,5 @@
-#
-# Copyright (C) 2021 Tuono, Inc.
-# All Rights Reserved
-#
+# runs on pull requests and merges into main
+# runs lint and coverage and uploads to codecov
 ---
 name: Test
 
