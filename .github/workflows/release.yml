@@ -15,8 +15,6 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: hmarr/debug-action@v2
-
       - uses: actions/checkout@v2
 
       - name: Build and Publish (Prerelease)
@@ -24,7 +22,6 @@ jobs:
         uses: JRubics/poetry-publish@v1.9
         with:
           pypi_token: ${{ secrets.PYPI_TEST_TOKEN }}
-          build_format: "sdist"
           repository_name: "testpypi"
           repository_url: "https://test.pypi.org/legacy/"
 
@@ -33,4 +30,3 @@ jobs:
         uses: JRubics/poetry-publish@v1.9
         with:
           pypi_token: ${{ secrets.PYPI_TOKEN }}
-          build_format: "sdist"
