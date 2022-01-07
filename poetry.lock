@@ -1136,7 +1136,7 @@ reference = "pypi-public"
 
 [[package]]
 name = "types-retry"
-version = "0.9.3"
+version = "0.9.4"
 description = "Typing stubs for retry"
 category = "dev"
 optional = false
@@ -1282,7 +1282,7 @@ reference = "pypi-public"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "5e52532500540e2b37de239c55025e413ec974d89c67314d2307bece08f35d36"
+content-hash = "f57d44f2f6cbf55823c0ce8a572422b49ccb9f31a823b3b872ca3a04fc23f66b"
 
 [metadata.files]
 bandit = [
@@ -1786,8 +1786,8 @@ tomli = [
     {file = "tomli-2.0.0.tar.gz", hash = "sha256:c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1"},
 ]
 types-retry = [
-    {file = "types-retry-0.9.3.tar.gz", hash = "sha256:4d65e18cae2855654fc4160bf4c1de9574059a5efb17ca0f2bef4dcbfa2e738c"},
-    {file = "types_retry-0.9.3-py3-none-any.whl", hash = "sha256:7f6a89456155389d2115df3ec536df63a05670d7f834bdbaf9bd61419dc97657"},
+    {file = "types-retry-0.9.4.tar.gz", hash = "sha256:c7201585d7f4060a615708f32f9edfd6e05f6390b5553be89e749961af4d047e"},
+    {file = "types_retry-0.9.4-py3-none-any.whl", hash = "sha256:4bbffda291977609fc263fe8289916ff6f714cb40826e4a60b7bc79337bb19de"},
 ]
 typing-extensions = [
     {file = "typing_extensions-4.0.1-py3-none-any.whl", hash = "sha256:7f001e5ac290a0c0401508864c7ec868be4e701886d5b573a9528ed3973d9d3b"},
