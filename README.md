@@ -140,7 +140,10 @@ There is one module for each service.  Each API call for a service that has post
 has an identically named function with a decorator.  This package also extends the event
 data carried through such that the original call parameters and client are available.
 
-Each post-condition method should guarantee visibility of the API that was calledr. For
+Never call the original API from the post-condition function (unless you like infinite
+recursion)!
+
+Each post-condition method should guarantee visibility of the API that was called. For
 example when something is deleted, the function should attempt to get that resource
 and raise a `PostConditionNotSatisfiedError` if it is still there.  The framework will
 then enter a retry loop, calling the function again after an increasing delay.
