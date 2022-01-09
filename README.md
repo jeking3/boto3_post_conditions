@@ -1,7 +1,7 @@
 # boto3-post-conditions
 
  ![ci](https://github.com/jeking3/boto3_post_conditions/actions/workflows/test.yml/badge.svg)
-[![codecov](https://codecov.io/gh/jeking3/boto3_post_conditions/branch/main/graph/badge.svg?token=NP7WihxzHD)](https://codecov.io/gh/jeking3/boto3_post_conditions)
+[![codecov](https://codecov.io/gh/jeking3/boto3-post-conditions/branch/main/graph/badge.svg?token=NP7WihxzHD)](https://codecov.io/gh/jeking3/boto3-post-conditions)
 [![open issues](https://img.shields.io/github/issues-raw/jeking3/boto3_post_conditions)](https://github.com/jeking3/boto3_post_conditions/issues)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -127,3 +127,23 @@ Every modification or deletion has a post-condition remedy that can ensure
 the vast majority of these cases are eliminated, and virtually removing retry
 logic from your code and tests!  As proof, look at the recorded test for
 `test_ssm_integration`.
+
+## Development
+
+This project uses [poetry](https://pypi.org/project/poetry/) to manage the development
+virtual environment.  To get started you need to install poetry using pip, then run
+the command `poetry install`.  The project is configured to store the virtual environment
+in the `.venv` directory.
+
+To update supported services, look in the `boto3_post_conditions/services` directory.
+There is one module for each service.  Each API call for a service that has post-conditions
+has an identically named function with a decorator.  This package also extends the event
+data carried through such that the original call parameters and client are available.
+
+Each post-condition method should guarantee visibility of the API that was calledr. For
+example when something is deleted, the function should attempt to get that resource
+and raise a `PostConditionNotSatisfiedError` if it is still there.  The framework will
+then enter a retry loop, calling the function again after an increasing delay.
+
+Unit testing is required for new code.  If you submit a PR without testing it will not be
+approved.
