@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2021 James E. King III <jking@apache.org>
+# Copyright (C) 2021 - 2022 James E. King III <jking@apache.org>
 #
 # Distributed under the Apache License, Version 2.0
 # See accompanying LICENSE file in this repository or at

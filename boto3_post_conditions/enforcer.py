@@ -193,6 +193,4 @@ class PostConditionEnforcer(object):
             if info.function == "_make_api_call":
                 return frame.f_locals["self"], frame.f_locals["api_params"]
             frame = frame.f_back
-        raise NotImplementedError(
-            "something unexpected changed in botocore"
-        )  # pragma: no cover
+        raise NotImplementedError("something unexpected changed in botocore")
