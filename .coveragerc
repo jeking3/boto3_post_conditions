@@ -1,3 +1,21 @@
 [run]
 branch = True
 source = boto3_post_conditions
+
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Since we're overriding things, re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain about type checking:
+    # https://github.com/nedbat/coveragepy/issues/831#issuecomment-517778185
+    if TYPE_CHECKING:
+
+    # Unexpected conditions that are exceeding difficult to cover
+    NotImplementedError
+
+    # Future, if needed:
+    # Don't complain about mixin type protocols
+    # https://stackoverflow.com/a/59128961
+    # \.\.\.
