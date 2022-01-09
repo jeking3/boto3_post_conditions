@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2021 James E. King III <jking@apache.org>
+# Copyright (C) 2021 - 2022 James E. King III <jking@apache.org>
 #
 # Distributed under the Apache License, Version 2.0
 # See accompanying LICENSE file in this repository or at
@@ -15,17 +15,22 @@ from typing import Callable
 from typing import Dict
 from typing import Optional
 from typing import Tuple
+from typing import TYPE_CHECKING
 
 from botocore.client import BaseClient
-from mypy_extensions import KwArg
-from mypy_extensions import VarArg
 from retry import retry
 
 from .exceptions import PostConditionNotSatisfiedError
 
-# signature of the after_call event handler that is injected
-# TODO: better type for args, kwargs?
-AfterEventHandler = Callable[[BaseClient, VarArg(), KwArg()], None]
+if TYPE_CHECKING:
+    from mypy_extensions import KwArg
+    from mypy_extensions import VarArg
+
+    # signature of the after_call event handler that is injected
+    # TODO: better type for args, kwargs?
+    AfterEventHandler = Callable[[BaseClient, VarArg(), KwArg()], None]
+else:
+    AfterEventHandler = object
 
 
 @dataclass
