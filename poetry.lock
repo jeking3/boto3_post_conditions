@@ -19,14 +19,14 @@ reference = "pypi-public"
 
 [[package]]
 name = "boto3"
-version = "1.20.42"
+version = "1.20.43"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 3.6"
 
 [package.dependencies]
-botocore = ">=1.23.42,<1.24.0"
+botocore = ">=1.23.43,<1.24.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.5.0,<0.6.0"
 
@@ -360,7 +360,7 @@ reference = "pypi-public"
 
 [[package]]
 name = "botocore"
-version = "1.23.42"
+version = "1.23.43"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -1290,16 +1290,15 @@ bandit = [
     {file = "bandit-1.7.1.tar.gz", hash = "sha256:a81b00b5436e6880fa8ad6799bc830e02032047713cbb143a12939ac67eb756c"},
 ]
 boto3 = [
-    {file = "boto3-1.20.42-py3-none-any.whl", hash = "sha256:49499acf3f1dbb5f09eb93abfeb4025cd76fb7880c16a01a2901dfa335496f0d"},
-    {file = "boto3-1.20.42.tar.gz", hash = "sha256:d2fce99e42cb7cb263f3ff272bc707aa6a66bc6ab30d90bf0ff6cbdddd867cfa"},
+    {file = "boto3-1.20.43-py3-none-any.whl", hash = "sha256:50611d4707e967f1300e897c196db98cfc1b0ab95eca5d46d3b56a1c8e2a27b5"},
 ]
 boto3-stubs = [
     {file = "boto3-stubs-1.20.42.tar.gz", hash = "sha256:f24a22779892adcdd05336725feae52cc78cba9f6fde1d872008069230c49307"},
     {file = "boto3_stubs-1.20.42-py3-none-any.whl", hash = "sha256:a93a9336381a62b931bc5f37be210b53c2dea0f032820217f93ff86047f21c0f"},
 ]
 botocore = [
-    {file = "botocore-1.23.42-py3-none-any.whl", hash = "sha256:e2e5509934e634a374afa560de4ddc770bb562c7259cb63cd92aa7e54f943bc1"},
-    {file = "botocore-1.23.42.tar.gz", hash = "sha256:a58f1e559ff2c65495f55ac48217afefb56f2d709d30f7377c40287e8c5765d0"},
+    {file = "botocore-1.23.43-py3-none-any.whl", hash = "sha256:22c88a653a026439f2e9b0ade154fafe0eaaaea3fee6e080102d90ec4271284e"},
+    {file = "botocore-1.23.43.tar.gz", hash = "sha256:f8c60dff90a7aea7f84908f0e4e778890d4f08c883d2da111c15c10d7c199102"},
 ]
 botocore-stubs = [
     {file = "botocore-stubs-1.23.42.tar.gz", hash = "sha256:8e6849d3b96248c79b530ae1d4c3b985734b5c3bbef2f65f78c011c22a55b815"},
