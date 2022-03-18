@@ -709,11 +709,11 @@ reference = "pypi-public"
 
 [[package]]
 name = "moto"
-version = "3.0.1"
+version = "3.1.1"
 description = "A library that allows your python tests to easily mock out the boto library"
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 
 [package.dependencies]
 boto3 = ">=1.9.201"
@@ -730,13 +730,15 @@ xmltodict = "*"
 
 [package.extras]
 all = ["PyYAML (>=5.1)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (!=0.15)", "docker (>=2.5.1)", "graphql-core", "jsondiff (>=1.1.2)", "aws-xray-sdk (>=0.93,!=0.96)", "idna (>=2.5,<4)", "cfn-lint (>=0.4.0)", "sshpubkeys (>=3.1.0)", "setuptools"]
-apigateway = ["python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (!=0.15)"]
+apigateway = ["PyYAML (>=5.1)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (!=0.15)"]
+apigatewayv2 = ["PyYAML (>=5.1)"]
 appsync = ["graphql-core"]
 awslambda = ["docker (>=2.5.1)"]
 batch = ["docker (>=2.5.1)"]
 cloudformation = ["docker (>=2.5.1)", "PyYAML (>=5.1)", "cfn-lint (>=0.4.0)"]
 cognitoidp = ["python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (!=0.15)"]
 ds = ["sshpubkeys (>=3.1.0)"]
+dynamodb = ["docker (>=2.5.1)"]
 dynamodb2 = ["docker (>=2.5.1)"]
 dynamodbstreams = ["docker (>=2.5.1)"]
 ec2 = ["sshpubkeys (>=3.1.0)"]
@@ -1287,7 +1289,7 @@ reference = "pypi-public"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "53cd585f4c8944f857d80489fef4cb070c4b9133759218ae59b742abfed43723"
+content-hash = "e7304e99573240d25dc237903112ec4e8ee8e463fd26e08659c6a7650968131a"
 
 [metadata.files]
 bandit = [
@@ -1568,8 +1570,7 @@ mccabe = [
     {file = "mccabe-0.6.1.tar.gz", hash = "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"},
 ]
 moto = [
-    {file = "moto-3.0.1-py2.py3-none-any.whl", hash = "sha256:7806e77f9f6badaba4f5df5343a17bdf9311f950c4216e299515de7c9eb91df8"},
-    {file = "moto-3.0.1.tar.gz", hash = "sha256:b1bf9306ff9dc40d814766190023a392b55ce84386e118118f0555d4229e1861"},
+    {file = "moto-3.1.1-py2.py3-none-any.whl", hash = "sha256:462495563847134ea8ef4135a229731a598a8e7b6b10a74f8d745815aa20a25b"},
 ]
 multidict = [
     {file = "multidict-6.0.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:0b9e95a740109c6047602f4db4da9949e6c5945cefbad34a1299775ddc9a62e2"},
