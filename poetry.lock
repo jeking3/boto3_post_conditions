@@ -24,14 +24,14 @@ reference = "pypi-public"
 
 [[package]]
 name = "boto3"
-version = "1.21.30"
+version = "1.21.32"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 3.6"
 
 [package.dependencies]
-botocore = ">=1.24.30,<1.25.0"
+botocore = ">=1.24.32,<1.25.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.5.0,<0.6.0"
 
@@ -368,7 +368,7 @@ reference = "pypi-public"
 
 [[package]]
 name = "botocore"
-version = "1.24.30"
+version = "1.24.32"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -1299,16 +1299,16 @@ bandit = [
     {file = "bandit-1.7.4.tar.gz", hash = "sha256:2d63a8c573417bae338962d4b9b06fbc6080f74ecd955a092849e1e65c717bd2"},
 ]
 boto3 = [
-    {file = "boto3-1.21.30-py3-none-any.whl", hash = "sha256:ef210f8e85cdb6d26a38ebad1cfe9cefdef2ab269207e5987653555375a7ef6b"},
-    {file = "boto3-1.21.30.tar.gz", hash = "sha256:f0af8f4ef5fe6353c794cd3cce627d469a618b58ace7ca75a63cfd719df615ce"},
+    {file = "boto3-1.21.32-py3-none-any.whl", hash = "sha256:8e7a6d70cefa4e125466e0c467b489649cb72e3632997844bc3c382f948c46e4"},
+    {file = "boto3-1.21.32.tar.gz", hash = "sha256:05f4438607e560624caadb073c6c63181eda9bf74f8a9e4581e7b43d641cc683"},
 ]
 boto3-stubs = [
     {file = "boto3-stubs-1.21.30.tar.gz", hash = "sha256:0fc0dad766c644f595d4e91d768ad0eb1b228e752b86b8944a9c4493dc71e000"},
     {file = "boto3_stubs-1.21.30-py3-none-any.whl", hash = "sha256:28be36333f6a6bcecc77569ca1e1b82d2fdbdece722e551e392c9703d176a29a"},
 ]
 botocore = [
-    {file = "botocore-1.24.30-py3-none-any.whl", hash = "sha256:c622751093e3d0bf61343e66d6d06190ef30bf42b1557d5070ca84e9efa06d4b"},
-    {file = "botocore-1.24.30.tar.gz", hash = "sha256:af4bdc51eeecbe9fdcdadbed9ad58c5c91380ef30f3560022bbc2ee1d78f0ad6"},
+    {file = "botocore-1.24.32-py3-none-any.whl", hash = "sha256:4f08eaaa93ee03f14de760031dd060cda3bd6aab734d194a916dbb8f7e5c7085"},
+    {file = "botocore-1.24.32.tar.gz", hash = "sha256:5c2dab84f21b2a8c00bdab2150149be0ca0c8e8dd0b38712fa3562af5cfe53a2"},
 ]
 botocore-stubs = [
     {file = "botocore-stubs-1.24.30.tar.gz", hash = "sha256:c2f842e4c893bc0dfb34e7e44e0562aca075176f265ef95273e599c77e4f337c"},
