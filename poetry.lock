@@ -713,7 +713,7 @@ reference = "pypi-public"
 
 [[package]]
 name = "moto"
-version = "3.1.5"
+version = "3.1.8"
 description = "A library that allows your python tests to easily mock out the boto library"
 category = "dev"
 optional = false
@@ -1294,7 +1294,7 @@ reference = "pypi-public"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "37f95674a562eecd1434df97f85a0ba01e793a6ebc3e72ca048a2e35fcc8ca1a"
+content-hash = "cc9a3258a8604a964f64bd13690fe83a37a7fa225d98e4a76f8b6a0fdd4e3943"
 
 [metadata.files]
 bandit = [
@@ -1540,8 +1540,8 @@ mccabe = [
     {file = "mccabe-0.6.1.tar.gz", hash = "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"},
 ]
 moto = [
-    {file = "moto-3.1.5-py2.py3-none-any.whl", hash = "sha256:86ba08512fe848bd8687cd4517ac0d9bcaf829bcec6196ece8a77b8aaf9dfc77"},
-    {file = "moto-3.1.5.tar.gz", hash = "sha256:4f87045a97326b38c8cee9420752b38c0c5281828442febf4c3e409f98dadb7d"},
+    {file = "moto-3.1.8-py3-none-any.whl", hash = "sha256:19dd772ab1092ef8b74a4dd801dbdf1cf6f3b181c1dff5f2343884162e33bf6f"},
+    {file = "moto-3.1.8.tar.gz", hash = "sha256:bde95005ec42a88448a98809397030f9e886387f469dcd2fcbc7f38d75858872"},
 ]
 multidict = [
     {file = "multidict-6.0.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:0b9e95a740109c6047602f4db4da9949e6c5945cefbad34a1299775ddc9a62e2"},
