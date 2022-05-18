@@ -26,7 +26,7 @@ retry = "^0.9.2"
 
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.2"
-boto3-stubs = "^1.21.46"
+boto3-stubs = "^1.23.1"
 coverage = "^6.3.2"
 flake8 = "^4.0.1"
 flake8-sfs = "^0.0.3"
@@ -35,7 +35,7 @@ mypy = "^0.942"
 mypy-boto3-secretsmanager = "^1.21.45"
 mypy-boto3-ssm = "^1.21.43"
 pre-commit = "^2.18.1"
-types-retry = "^0.9.5"
+types-retry = "^0.9.7"
 vcrpy = "^4.1.1"
 
 [build-system]
