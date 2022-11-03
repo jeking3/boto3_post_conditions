@@ -34,7 +34,7 @@ moto = "^3.1.5"
 mypy = "^0.942"
 mypy-boto3-secretsmanager = "^1.21.45"
 mypy-boto3-ssm = "^1.24.39"
-pre-commit = "^2.18.1"
+pre-commit = "^2.20.0"
 types-retry = "^0.9.9"
 vcrpy = "^4.1.1"
 
