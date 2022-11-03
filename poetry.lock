@@ -457,7 +457,7 @@ optional = false
 python-versions = ">=3.5.0"
 
 [package.extras]
-unicode_backport = ["unicodedata2"]
+unicode-backport = ["unicodedata2"]
 
 [package.source]
 type = "legacy"
@@ -888,7 +888,7 @@ reference = "pypi-public"
 
 [[package]]
 name = "pre-commit"
-version = "2.18.1"
+version = "2.20.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 category = "dev"
 optional = false
@@ -1017,7 +1017,7 @@ urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
-use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
+use-chardet-on-py3 = ["chardet (>=3.0.2,<5)"]
 
 [package.source]
 type = "legacy"
@@ -1296,7 +1296,7 @@ reference = "pypi-public"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "f87f6da87c3e6ae9a185a5dcfc11a8007606b0fd300dd29fdb46bb12b0587969"
+content-hash = "bd4eb656e8259786babd544a06bc88de410cd37f5455cb7be5ebe54aaf698d24"
 
 [metadata.files]
 bandit = [
@@ -1479,6 +1479,7 @@ flake8 = [
 ]
 flake8-sfs = [
     {file = "flake8-sfs-0.0.3.tar.gz", hash = "sha256:43936ce55c18fec8465b9640825dd27da7bb748f1bb899e8954cd9e3cae05a94"},
+    {file = "flake8_sfs-0.0.3-py2.py3-none-any.whl", hash = "sha256:16edd15f2dc8275137582549fcc6c56e0a36138a5d233fbbe0fea46c7b77d406"},
 ]
 gitdb = [
     {file = "gitdb-4.0.9-py3-none-any.whl", hash = "sha256:8033ad4e853066ba6ca92050b9df2f89301b8fc8bf7e9324d412a63f8bf1a8fd"},
@@ -1665,8 +1666,8 @@ platformdirs = [
     {file = "platformdirs-2.5.1.tar.gz", hash = "sha256:7535e70dfa32e84d4b34996ea99c5e432fa29a708d0f4e394bbcb2a8faa4f16d"},
 ]
 pre-commit = [
-    {file = "pre_commit-2.18.1-py2.py3-none-any.whl", hash = "sha256:02226e69564ebca1a070bd1f046af866aa1c318dbc430027c50ab832ed2b73f2"},
-    {file = "pre_commit-2.18.1.tar.gz", hash = "sha256:5d445ee1fa8738d506881c5d84f83c62bb5be6b2838e32207433647e8e5ebe10"},
+    {file = "pre_commit-2.20.0-py2.py3-none-any.whl", hash = "sha256:51a5ba7c480ae8072ecdb6933df22d2f812dc897d5fe848778116129a681aac7"},
+    {file = "pre_commit-2.20.0.tar.gz", hash = "sha256:a978dac7bc9ec0bcee55c18a277d553b0f419d259dadb4b9418ff2d00eb43959"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
