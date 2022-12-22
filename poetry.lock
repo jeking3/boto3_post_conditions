@@ -816,8 +816,8 @@ reference = "pypi-public"
 
 [[package]]
 name = "mypy-boto3-ssm"
-version = "1.24.39.post2"
-description = "Type annotations for boto3.SSM 1.24.39 service generated with mypy-boto3-builder 7.10.1"
+version = "1.26.35"
+description = "Type annotations for boto3.SSM 1.26.35 service generated with mypy-boto3-builder 7.12.0"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
@@ -1296,7 +1296,7 @@ reference = "pypi-public"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "f717be5b03c5bbc6e61d7178f90a1ce5b8acbacf1075c9648670d06a6eb003ad"
+content-hash = "239e251aa50dfb2fb5626e06f4a88b5c92738628b43c1e379516bde8edc6f39f"
 
 [metadata.files]
 bandit = [
@@ -1646,8 +1646,8 @@ mypy-boto3-secretsmanager = [
     {file = "mypy_boto3_secretsmanager-1.26.0.post1-py3-none-any.whl", hash = "sha256:4fb63d1322b5731676425590ad6109b78fd8087418ac757c746d636aa9390a89"},
 ]
 mypy-boto3-ssm = [
-    {file = "mypy-boto3-ssm-1.24.39.post2.tar.gz", hash = "sha256:2859bdcef110d9cc53007a7adba9c765e804b886f98d742a496bb8f7dac07308"},
-    {file = "mypy_boto3_ssm-1.24.39.post2-py3-none-any.whl", hash = "sha256:bfdb434c513fbb1f3bc4b5c158ed4e7a46cb578e5eb01e818d45f4f38296ef2c"},
+    {file = "mypy-boto3-ssm-1.26.35.tar.gz", hash = "sha256:aa3d5b07895e6b493208cbe0d134e0566832d01e7b82a3f5721bfbabee215205"},
+    {file = "mypy_boto3_ssm-1.26.35-py3-none-any.whl", hash = "sha256:0cd93e105119b428196807ed6326c046a915d7aca4aa7e9c0005420f74307faf"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
