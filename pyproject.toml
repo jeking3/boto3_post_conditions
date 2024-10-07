@@ -48,4 +48,4 @@ build-backend = "poetry.core.masonry.api"
 # https://github.com/python-poetry/poetry/issues/3456
 name = "pypi-public"
 url = "https://pypi.org/simple/"
-default = true
+priority = "primary"
