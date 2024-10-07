@@ -9,7 +9,7 @@
 import boto3
 from botocore.awsrequest import AWSResponse
 from botocore.exceptions import ClientError
-from moto.core.models import MockRawResponse
+from moto.core.botocore_stubber import MockRawResponse
 from moto.secretsmanager import mock_secretsmanager
 
 from boto3_post_conditions import PostConditionEnforcer

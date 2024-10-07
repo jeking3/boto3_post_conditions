@@ -10,7 +10,7 @@ import boto3
 import vcr
 from botocore.awsrequest import AWSResponse
 from botocore.exceptions import ClientError
-from moto.core.models import MockRawResponse
+from moto.core.botocore_stubber import MockRawResponse
 from moto.ssm import mock_ssm
 
 from boto3_post_conditions import PostConditionEnforcer
