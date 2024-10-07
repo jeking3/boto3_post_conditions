@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "boto3-post-conditions"
-version = "0.3.0"
+version = "0.3.1"
 description = "Remove retry logic from boto3 clients by enforcing post-conditions."
 readme = "README.md"
 repository = "https://github.com/jeking3/boto3-post-conditions/"
 keywords = ["boto3", "aws", "eventual consistency", "retry"]
-authors = ["James E. King III <jking@apache.org>"]
+authors = ["James E. King III <jking@apache.org>", "CloudTruth Developers <dev@cloudtruth.com>"]
 license = "Apache-2.0"
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -15,12 +15,14 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed"
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.8"
 boto3 = "^1.20"
 retry = "^0.9.2"
 
@@ -46,4 +48,4 @@ build-backend = "poetry.core.masonry.api"
 # https://github.com/python-poetry/poetry/issues/3456
 name = "pypi-public"
 url = "https://pypi.org/simple/"
-default = true
+priority = "primary"

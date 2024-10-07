@@ -16,7 +16,7 @@ from unittest.mock import patch
 
 from botocore.awsrequest import AWSResponse
 from botocore.client import BaseClient
-from moto.core.models import MockRawResponse
+from moto.core.botocore_stubber import MockRawResponse
 
 
 class PostConditionTestCase(TestCase):
